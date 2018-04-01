@@ -1,5 +1,5 @@
 # quandl-wiki-prices
-These Racket programs will download the Quandl WIKI/PRICES datatable CSV files and insert the data into a PostgreSQL database. The intended usage is:
+These Racket programs will download the Quandl `WIKI/PRICES` datatable CSV files and insert the data into a PostgreSQL database. The intended usage is:
 
 ```
 $ racket extract.rkt
