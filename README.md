@@ -1,4 +1,7 @@
 # quandl-wiki-prices
+
+**Note: Quandl sent a note to WIKI/PRICES consumers that the data available on WIKI/PRICES will be inaccurate and delayed. Unless this is fixed, you are recommended to use another source of data.**
+
 These Racket programs will download the Quandl `WIKI/PRICES` datatable CSV files and insert the data into a PostgreSQL database. The intended usage is:
 
 ```
