@@ -1,9 +1,12 @@
-#lang racket
+#lang racket/base
 
-(require db)
-(require racket/cmdline)
-(require srfi/19) ; Time Data Types and Procedures
-(require threading)
+(require db
+         racket/cmdline
+         racket/list
+         racket/sequence
+         racket/string
+         srfi/19 ; Time Data Types and Procedures
+         threading)
 
 (struct price-entry
   (ticker

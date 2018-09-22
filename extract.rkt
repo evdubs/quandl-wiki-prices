@@ -1,11 +1,15 @@
-#lang racket
+#lang racket/base
 
-(require db)
-(require net/url)
-(require racket/cmdline)
-(require srfi/19) ; Time Data Types and Procedures
-(require tasks)
-(require threading)
+(require db
+         net/url
+         racket/cmdline
+         racket/file
+         racket/list
+         racket/port
+         racket/string
+         srfi/19 ; Time Data Types and Procedures
+         tasks
+         threading)
 
 (define (download-prices symbol start-date end-date api-key)
   (make-directory* (string-append "/var/tmp/quandl/wiki-prices/" (date->string (current-date) "~1")))
